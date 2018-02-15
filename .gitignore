@@ -1,0 +1,4 @@
+#
+# pdfs are usually something generated
+#
+*.pdf
