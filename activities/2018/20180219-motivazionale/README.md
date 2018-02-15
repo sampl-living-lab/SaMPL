@@ -10,6 +10,8 @@
   * Dov'è dislocato
   * Cosa fa (funzioni, attività)
   * presentazione attività 2018
+  * risorse: calendario, repositories, server interno, FB, instagram, YT, Vimeo ecc.
+  * progetti futuri
   * Q&A
 * ???
 
