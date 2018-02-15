@@ -2,6 +2,8 @@
 
 ## Interventi
 
+### Interventi docenza/amministrazione/tecnica
+
 * Nicola Bernardini *Introduzione al SaMPL living lab*
   * Che cos'è *SaMPL* (storia)
   * Chi c'è dietro le quinte
@@ -9,6 +11,10 @@
   * Cosa fa (funzioni, attività)
   * presentazione attività 2018
   * Q&A
+* ???
+
+### Interventi staff
+
 * ???
 
 ## Hands-on Auditorium (Vedovato + staff)
