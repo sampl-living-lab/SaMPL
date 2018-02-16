@@ -1,0 +1,8 @@
+#
+# pdfs are usually something generated
+#
+*.pdf
+#
+# and txts are too
+#
+*.txt
