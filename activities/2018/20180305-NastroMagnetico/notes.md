@@ -11,7 +11,7 @@
 | ------------------------ | ------------------------------ | ------------------------------------------------- |
 | ore 10:30-12:30 | DEI/P CSC Lungargine del Piovego, 1 Padova | visita guidata al CSC di Padova |
 | ore 12:30-15:00 | | lunch break |
-| ore 15:00-18:00 | Sala Riunioni 406 DEI/G IV piano edif. DEI/G | *Il Nastro Magnetico: Ieri, Oggi, Domani* |
+| ore 15:00-18:00 | Sala 318 DEI/G III piano edif. DEI/G | *Il Nastro Magnetico: Ieri, Oggi, Domani* |
 
 ## Presentazione
 
