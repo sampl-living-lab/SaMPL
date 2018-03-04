@@ -2,3 +2,10 @@
 # pdfs are usually something generated
 #
 *.pdf
+*.out
+*.toc
+*.blg
+*.bbl
+*.aux
+*.dvi
+*.log

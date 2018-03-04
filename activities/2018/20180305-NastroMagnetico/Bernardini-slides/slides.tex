@@ -1,0 +1,529 @@
+%
+% $Id: slides.tex 49 2014-02-16 10:42:33Z nicb $
+%
+% Copyright (C) 2006 Nicola Bernardini nicb@sme-ccppd.org
+% 
+% This work is licensed under a Creative Commons License, and specifically the
+% 
+%   Creative Commons Attribution-ShareAlike 2.5 License
+%   http://creativecommons.org/licenses/by-sa/2.5/legalcode
+% 
+% Check http://www.creativecommons.org/ for more information on
+% Creative Commons Licenses and the Creative Commons Project.
+%
+% Set the macros below to whatever is appropriate in a given context
+%
+
+\newcommand{\scelsiroot}{/home/nicb/me/svn/nicb/projects/music/Scelsi/doc/presentazioni}
+\newcommand{\imagedir}{\scelsiroot/materiali}
+\newcommand{\exampledir}{\scelsiroot/materiali}
+\documentclass[compress,xcolor=dvipsnames]{beamer}
+
+\usepackage{beamerthemeSME-CCPPD}
+\usepackage{beamercolorthemeSME-CCPPD}
+\usepackage{beamerinnerthemeSME-CCPPD}
+
+\usepackage{colortbl}
+\usepackage[italian]{babel}
+\usepackage{pgf}
+\usepackage{xspace}
+
+\usepackage{multimedia}
+\usepackage{xmpmulti}
+\usepackage{hyperref}
+\usepackage{gitinfo2}
+\newcommand{\rcstag}{v.\gitAbbrevHash}
+\usepackage{gensymb}
+\usepackage[12pt]{moresize}
+
+\newcommand{\hhref}[1]{\href{#1}{#1}}
+
+\newcommand{\cpyear}{2018}
+\newcommand{\cpholder}{Nicola Bernardini}
+\newcommand{\cpholderemail}{nicb@sme-ccppd.org}
+
+% Use some nice templates
+
+%\beamertemplateshadingbackground{red!10}{structure!10}
+\beamertemplatetransparentcovereddynamic
+\beamertemplateballitem
+\beamertemplatenumberedballsectiontoc
+
+% My colors
+\definecolor{notdone}{gray}{0.35}
+
+%\usecolortheme[named=MyColor]{structure}
+%\usecolortheme[named=MyColor]{structure}
+\beamertemplateshadingbackground{white!10}{white!10}
+
+\setbeamerfont{smalllist}{size=\ssmall}
+
+\newcommand{\FIS}{Fondazione Isabella Scelsi\xspace}
+\newcommand{\Mo}{M\degree\xspace}
+\newcommand{\Scelsi}{Giacinto Scelsi\xspace}
+ 
+\title[Recovering Scelsi's Tapes]%
+{%
+  I nastri di Giacinto Scelsi\\
+	{\tiny (\rcstag)}
+}
+
+\author{%
+	Nicola Bernardini\\
+    \href{mailto:\cpholderemail}{\cpholderemail}
+}
+\institute[SME-CCPPD]%
+{%
+	\href{http://www.scelsi.it}{Fondazione Isabella Scelsi -- Roma}\\
+	\href{http://www.conservatoriopollini.it}
+		 {Conservatorio di Musica ``C.Pollini'' -- Padova}
+}
+\date[05/03/2018]{Il Nastro Magnetico: ieri, oggi, domani -- DEI/G Padova 5 marzo 2018}
+
+\begin{document}
+\newcounter{ms}
+  
+\begin{frame}
+	\titlepage
+\end{frame}
+  
+%
+% Who was Scelsi?
+%
+\section{\Scelsi}
+
+\pgfdeclareimage[width=0.3\textwidth]{scelsi}{\imagedir/scelsi}
+\begin{frame}
+	\frametitle{Chi era \Scelsi?}
+
+ 	\begin{columns}[T]
+      \begin{column}{0.3\textwidth}
+          \begin{center}
+              \pgfuseimage{scelsi}
+ 		      \end{center}
+ 	  \end{column}
+    \begin{column}{0.65\textwidth}
+    {
+      \usebeamerfont{smalllist}
+			\begin{itemize}%[<+- | alert@+->]
+	
+				\item Compositore italiano
+				\item Nato a La Spezia nel 1905, morto a Roma nel 1988
+	      \item Uno dei primi utilizzatori della dodecafonia in Italia
+				\item Lunga crisi creativa negli anni '50
+				\item Rivoluzione dei suoi metodi e delle sue prassi compositive
+				\item Improvvisazioni registrate su vinile e poi su nastro
+	            trascritte da ``copisti'' su commissione
+	      \item Risultati musicali ``tra'' Var\`ese e Xenakis
+	      \item Ossessivamente ostacolato e ignorato in Italia, riconosciuto nel
+	          mondo intero dagli anni '70
+	      \item Misteriose le traiettorie creative delle sue composizioni
+	
+			\end{itemize}
+		}
+		\end{column}
+  \end{columns}
+
+\end{frame}
+
+\pgfdeclareimage[width=0.3\textwidth]{scelsi_giovane}{\imagedir/Scelsi_giovane}
+\begin{frame}
+	\frametitle[Metodologie Compositive]{Metodologie Compositive di \Scelsi}
+
+ 	\begin{columns}[T]
+      \begin{column}{0.3\textwidth}
+          \begin{center}
+              \pgfuseimage{scelsi_giovane}
+ 		      \end{center}
+ 	  \end{column}
+    \begin{column}{0.65\textwidth}
+    \usebeamerfont{smalllist}
+				\begin{itemize}%[<+- | alert@+->]
+		
+	        \item Sino agli inizi degli anni '50 scrittura tradizionale
+	
+	        \item Dagli inizi degli anni '50 in poi:
+	
+	            \begin{itemize}%[<+- | alert@+->]
+                \usebeamerfont{smalllist}
+
+	                \item  improvvisazioni al pianoforte o all'ondiola o altri
+	                    strumenti
+	                \item registrate prima su dischi di cera
+	                \item poi su nastro magnetico
+	                \item consegnate a ``copisti'' di fiducia per la
+	                    trascrizione, \onslide<+- | alert@+->
+	                    con indicazioni sugli strumenti da usare, segmenti da
+	                    prelevare ecc.
+	                \item rivedute e corrette assieme ai ``copisti'' stessi
+	                \item edite da \emph{Salabert} su indicazione di Xenakis a
+	                    partire dagli anni '70 in poi
+
+	            \end{itemize}
+				\end{itemize}
+		\end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle[Materiali]{I Materiali del ``fare compositivo di \Scelsi}
+
+  \begin{itemize}%[<+- | alert@+->]
+
+      \item Le registrazioni sono usate come ``cahiers d'esquisses'' 
+
+      \item Esse servono a Scelsi per mediare quell'insopportabile distanza
+          che c'\`e tra l'invenzione creativa e la sua realizzazione compiuta
+          \onslide<+- | alert@+->(egli diceva di sentirsi solo un
+          ``intermediario'' di questo flusso creativo)
+
+      \item Scelsi non era n\'e un tecnico n\'e tantomeno un audiofilo\dots
+
+      \item \dots anche se era molto attento al timbro e ai suoni
+
+      \item Nelle trascrizioni, chiedeva che venissero trascritti \emph{tutti}
+          gli eventi sonori \onslide<+- | alert@+->(non solo quelli
+          creati da lui stesso, ma anche gli altri -- incidentali --
+          registrati in quel momento)
+
+  \end{itemize}
+
+\end{frame}
+
+\section{L'Archivio FIS}
+
+\begin{frame}
+	\frametitle{L'Archivio}
+
+	\pause
+	\begin{itemize}%[<+- | alert@+->]
+
+		\item L'archivio della \FIS contiene
+
+			\begin{itemize}%[<+- | alert@+->]
+
+				\item documenti cartacei (partiture, articoli, lettere)
+
+				\item 270 nastri magnetici di interesse primario
+
+				\item una quantit\`a ancora imprecisata di nastri magnetici di
+				      interesse secondario
+
+			\end{itemize}
+
+		\item Per un recupero ed una manutenzione appropriata, i nastri vanno
+		      riversati su supporto digitale ad alta definizione
+			  (campionamento 24--bit/96 kHz)
+
+		\item Priorit\`a: nastri di interesse primario
+
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Condizioni Originali}
+\begin{frame}
+	\frametitle{Condizioni originali di registrazione}
+
+	\begin{itemize}%[<+- | alert@+->]
+
+		\item Registrazioni via microfono
+
+		\item Sorgenti varie: pianoforte, ondiola, altri strumenti, radio,
+		      giradischi per supporti in vinile, lacca, ecc.
+
+		\item Scarsa informazione ancillare sulle velocit\`a di scorrimento,
+		      apparati di registrazione, senso di scorrimento, ecc.
+
+		\item Qualit\`a di registrazione molto scarsa (talvolta pessima)
+
+	    \item Rumori dell'ambiente circostante (risonanza della stanza, rumori
+			  ambientali -- uccellini, automobili, ecc.)
+
+		\item Fonti sonore accidentali (spezzoni di emissioni radiofoniche
+		      databili, ecc.)
+
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Peculiarit\`a}
+\setcounter{ms}{1}
+\begin{frame}
+    \frametitle{Peculiarit\`a del recupero (\arabic{ms})}
+
+	
+	\begin{itemize}%[<+- | alert@+->]
+
+		\item Difficolt\`a di identificazione di elementi chiave necessari al
+		      riversamento stesso (velocit\`a e verso di scorrimento)
+
+		\item Contesto creativo fortemente sperimentale (ricerca sulle forme,
+		sull'articolazione, sulla tecnologia stessa)
+
+		\item Utilizzazione dei \emph{suoni ancillari} (rumori legati alla
+		tecnologia stessa, riverbero della stanza, passaggio delle automobili,
+		canto degli uccelli, ecc.) per l'accumulo di informazioni importanti
+		(velocit\`a e verso di scorrimento, stagione, ora del giorno, stanza,
+		abitazione, data di registrazione, ecc.)
+
+	\end{itemize}
+
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{Peculiarit\`a del recupero (\arabic{ms})}
+	
+	\begin{itemize}%[<+- | alert@+->]
+
+		\item Preservazione dettagliata dello \emph{stato acustico} del
+		      nastro (nessuna operazione di restauro)
+
+    \item Trascrizioni multiple (ove necessario)
+
+		\item Ipotesi di disposizione logica dei materiali su ciascun reperto
+
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Tecniche}
+\begin{frame}
+	\frametitle{Tecniche di identificazione}
+
+	\begin{itemize}%[<+- | alert@+->]
+
+    \item Misurazione del \emph{hum}
+
+		\item \emph{Machine Fingerprinting}: registrazione dei rumori
+		ancillari dei registratori di propriet\`a di \Scelsi
+
+		\item Misurazione del riverbero caratteristico della stanza
+
+		\item Correlazione dei rumori presenti sui nastri con quelli
+		      registrati durante le sessioni di \emph{machine
+			  fingerprinting}
+
+		\item Ricerche in rete e in archivio di riscontri documentari
+		      e/o acustici
+
+	\end{itemize}
+
+\end{frame}
+
+\section{Esempi}
+
+\setcounter{ms}{1}
+\begin{frame}
+	\frametitle{Esempio \Roman{ms}}
+
+	\begin{center}
+	\href{run:\exampledir/33bis-A04@9,5.aup}
+  {\pgfimage[height=0.55\textheight]{\imagedir/33bis-A04@9,5}}
+	\end{center}
+
+	\begin{itemize}%[<alert@+->]
+
+		\item Sorgente del suono?
+
+		\item Casualit\`a o Determinazione?
+
+	\end{itemize}
+
+\end{frame}
+
+\stepcounter{ms}
+\begin{frame}
+	\frametitle{Esempio \Roman{ms}}
+
+	\begin{center}
+	\href{run:\exampledir/33bis-A05@9,5.aup}
+  {\pgfimage[height=0.55\textheight]{\imagedir/33bis-A05@9,5}}
+	\end{center}
+
+	\begin{itemize}%[<alert@+->]
+
+		\item Sorgente del suono?
+
+		\item Casualit\`a o Determinazione?
+
+	\end{itemize}
+
+\end{frame}
+
+\stepcounter{ms}
+\begin{frame}
+	\frametitle{Esempio \Roman{ms}}
+
+	\begin{center}
+	\href{run:\exampledir/NMGS078-591-A10+A11-B06+B07.aup}
+  {\pgfimage[height=0.55\textheight]{\imagedir/NMGS078-591-A10+A11-B06+B07}}
+	\end{center}
+
+	\begin{itemize}%[<alert@+->]
+
+		\item Verso di scorrimento?
+
+		\item Casualit\`a o Determinazione?
+
+	\end{itemize}
+
+\end{frame}
+
+\stepcounter{ms}
+\begin{frame}
+	\frametitle{Esempio \Roman{ms}}
+
+	\begin{center}
+    \pgfimage[height=0.8\textheight]{\imagedir/591-002}
+	\end{center}
+
+	\begin{itemize}
+
+		\item Scritte sui contenitori
+
+	\end{itemize}
+
+\end{frame}
+
+\stepcounter{ms}
+\begin{frame}
+	\frametitle{Esempio \Roman{ms}}
+
+	\begin{center}
+    {\pgfimage[height=0.8\textheight]{\imagedir/Snapshot33bis}}
+	\end{center}
+
+	\begin{itemize}
+
+		\item Layout grafico dell'``interpretazione'' logica del riversamento
+
+	\end{itemize}
+
+\end{frame}
+
+% \section{L'Archiviazione}
+% 
+% \subsection{La Scheda}
+% \begin{frame}
+% 	\frametitle{Scheda Catalografica}
+% 
+% 	\begin{center}
+% 	  \pgfimage[height=0.75\textheight]{\imagedir/db-structure}
+% 	\end{center}
+% 
+% \end{frame}
+% 
+% \subsection{L'Archivio}
+% \begin{frame}
+% 	\frametitle{Struttura dell'Archivio}
+% 
+% 	\begin{itemize}[<+- | alert@+->]
+% 	
+% 		\item Struttura ibrida Gerarchica/Relazionale
+% 
+% 		\item Dati Multimediali
+% 
+% 		\item Predisposizione per lo standard MAG-XML
+% 
+% 	\end{itemize}
+% 
+% \end{frame}
+% 
+% \subsection{Il Sistema}
+% 
+% \setcounter{ms}{1}
+% \begin{frame}
+%     \frametitle{Sistema Informativo ({\arabic{ms}})}
+% 
+% 	\begin{center}
+% 	  \pgfimage[height=0.75\textheight]{\imagedir/is}
+% 	\end{center}
+% 
+% \end{frame}
+% 
+% \refstepcounter{ms}
+% \begin{frame}
+%     \frametitle{Sistema Informativo ({\arabic{ms}})}
+% 
+%     \begin{itemize}[<+- | alert@+->]
+%         \item Server GNU/Linux
+%         \item Piattaforma di sviluppo \emph{Ruby on Rails}
+%         \item Database sql standard (\emph{mysql})
+%         \item Software dedicato: {\tt fishrdb}
+%         \item L'intero sistema \onslide<+- | alert@+-> software dedicato
+%             incluso \onslide<+- | alert@+-> \`e sviluppato con Software Libero
+%             ed \`e disponibile con licenza GNU/GPL 2
+%         \item Sito di sviluppo: \hhref{http://trac.sme-ccppd.org/fishrdb}
+%     \end{itemize}
+% 
+% \end{frame}
+
+\setcounter{ms}{1}
+\begin{frame}
+    \frametitle{Il Lavoro di Trasferimento}
+
+	\begin{itemize}%[<+- | alert@+->]
+  \usebeamerfont{smalllist}
+
+    \item Ad oggi, il lavoro di recupero digitale dell'Archivio della \FIS \`e
+        stato interamente finanziato dalla Fondazione stessa
+
+    \item Una prima fase \`e stata svolta da Nicola Bernardini e da Piero
+        Schiavoni (Studio Coltempo, Roma)
+
+    \item Dal Settembre 2007 in poi, la \FIS ha instaurato uno stretto
+        rapporto di collaborazione con la Discoteca di Stato/Istituto
+        Nazionale dell'Audiovisivo; Nicola Bernardini ha continuato ivi i
+        trasferimenti dei nastri coadiuvato dai tecnici Bruno Quaresima e
+        Carlo Cursi
+
+    \item Nicola Bernardini ha creato e mantenuto sino al 2017 il sistema
+        di archiviazione multimediale della \FIS ({\tt fishrdb})  coadiuvato dal Coordinatore
+        dell'Archivio Mauro Tosti Croce e dalle archiviste Maria Natalina
+        Trivisano, Marta Cardillo e Laura Piazza
+
+    \item Nel 2017 l'archiviazione dei documenti cartacei \`e stata migrata al sistema
+            adottato dal Ministero dei Beni Culturali
+            (\emph{CollectiveAccess}); l'archiviazione dei documenti sonori
+            \`e in via di migrazione
+
+	\end{itemize}
+
+\end{frame}
+
+\section{Ringraziamenti}
+
+\begin{frame}
+    \frametitle{Desidero ringraziare\dots}
+
+	  \begin{itemize}%[<+- | alert@+->]
+    \usebeamerfont{smalllist}
+
+	    \item la \FIS ed in particolare il suo Presidente Irmela Heimb\"acher Evangelisti,
+	          la Coordinatrice della Ricerca Alessandra Carlotta Pellegrini e le
+            archiviste Maria Natalina Trivisano, Laura Piazza e Marta Cardillo
+	          per la pazienza mostrata nei miei confronti
+	
+	    \item Pietro Schiavoni (Studio Coltempo, Roma), co-autore
+	        della strutturazione dei dati multimediali derivati dai trasferimenti
+	
+	    \item la Discoteca di Stato/Istituto
+	        Nazionale dell'Audiovisivo ed in particolare il suo Direttore Massimo
+	        Pistacchi e i tecnici Bruno Quaresima e Carlo Cursi per la
+	        qualit\`a e la professionalit\`a della loro collaborazione
+	
+	    \item \emph{last but not least}, desidero ringraziare sentitamente lo specialista (e buon
+	        amico) Prof.Sergio Canazza Targon per la pazienza con la quale ha
+	        guidato i miei primi passi nel mondo del recupero dei suoni -- sempre
+	        consigliandomi bene e portandomi sulla retta via
+          (naturalmente mi assumo la responsabilit\`a
+          di tutti gli errori)
+
+	  \end{itemize}
+
+\end{frame}
+
+\end{document}
