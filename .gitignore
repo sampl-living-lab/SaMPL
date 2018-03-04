@@ -9,3 +9,5 @@
 *.aux
 *.dvi
 *.log
+*.nav
+*.snm
